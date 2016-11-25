@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dinasaad.medication">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Medication Reminder"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AllMedicines"
+            android:label="All Medications"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dinasaad.medication.AllMedicines" />
+        </activity>
+
+        <activity
+            android:name=".AllMedicinesTime"
+            android:label="Today's Doses"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dinasaad.medication.AllMedicinesTime" />
+        </activity>
+
+        <activity
+            android:name=".NewMedicine"
+            android:label="Add New Medication"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dinasaad.medication.NewMedicine" />
+        </activity>
+        <activity
+            android:name=".MedicineDetail"
+            android:label="Medication Details"
+            android:parentActivityName=".AllMedicines">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dinasaad.medication.MedicineDetail" />
+        </activity>
+        <activity
+            android:name=".DeleteMedicine"
+            android:label="All Medications"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dinasaad.medication.DeleteMedicine" />
+        </activity>
+        <activity
+            android:name=".Alert"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <service
+            android:name=".AlarmService"
+           android:enabled="true" />
+        <receiver android:name=".AlarmReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".SettingActivity"
+            android:label="Settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dinasaad.medication.MainActivity" />
+
+        </activity>
+        <activity android:name=".calendarEvents">
+               <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dinasaad.medication.MainActivity" />
+
+        </activity>
+
+    </application>
+
+</manifest>
