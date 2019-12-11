@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Keep yourself and loved ones safe and never forget to take your medications again."
+        android:text="giữ an toàn cho bản thân và người thân và không bao giờ quên uống thuốc lại."
         android:id="@+id/textView2"
         android:textStyle="italic"
         android:textSize="25dp"

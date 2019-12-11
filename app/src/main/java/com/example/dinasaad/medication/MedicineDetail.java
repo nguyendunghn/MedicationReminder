@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 /**
  * Created by Dina Saad on 04-Nov-16.
@@ -48,4 +49,12 @@ public class MedicineDetail extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void onclick(View view) {
+    }
+
+    public void onRadioButtonFreqClicked(View view) {
+    }
+
+    public void onClick(View view) {
+    }
 }

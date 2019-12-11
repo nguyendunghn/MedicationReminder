@@ -8,7 +8,7 @@ import android.preference.PreferenceActivity;
 /**
  * Created by Dina Saad on 02-Nov-16.
  */
-public class SettingActivity extends PreferenceActivity
+public class  SettingActivity extends PreferenceActivity
     implements Preference.OnPreferenceChangeListener {
 
         @Override

@@ -19,7 +19,7 @@
         <TextView
 
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medicine Name"
+            android:text="Tên Thuốc"
             android:id="@+id/MedicineName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:typeface="serif"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/Medicine_type"
-            android:text="Medicine Type"
+            android:text="Loại Thuốc"
             />
 
         <RadioGroup
@@ -59,13 +59,13 @@
             <RadioButton android:id="@+id/injection_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Injection"
+                android:text="Thuốc Tiêm"
                 android:onClick="onRadioButtonClicked"/>
 
             <RadioButton android:id="@+id/Oral_drug_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Oral Tablet"
+                android:text="Thuốc Uống"
                 android:onClick="onRadioButtonClicked"/>
 
         </RadioGroup>
@@ -80,7 +80,7 @@
             android:textSize="20sp"
             android:typeface="serif"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Start Date"
+            android:text="Ngày"
             android:id="@+id/Start_date"
 
             android:clickable="true"
@@ -103,7 +103,7 @@
             android:textSize="20sp"
             android:typeface="serif"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Start Time"
+            android:text="Giờ"
             android:id="@+id/Start_Time"
             />
 
@@ -111,7 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="38dp"
             android:id="@+id/timeStart"
-            android:onClick="onClick"
+            android:onClick="onclick"
             android:layout_gravity="center_horizontal" />
 
         <TextView
@@ -124,7 +124,7 @@
             android:textSize="20sp"
             android:typeface="serif"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Number of doses"
+            android:text="Số Liều"
             android:id="@+id/dosage"
             />
 
@@ -145,7 +145,7 @@
             android:textSize="20sp"
             android:typeface="serif"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Frequency"
+            android:text="Giờ Nhắc "
             android:id="@+id/frequency"
             />
 
@@ -160,34 +160,34 @@
             <RadioButton android:id="@+id/button_once"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="One Time"
+                android:text="Một Lần"
                 android:onClick="onRadioButtonFreqClicked"/>
 
             <RadioButton android:id="@+id/button_4H"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Every 4 Hours"
+                android:text="Sau 5 Phút"
                 android:onClick="onRadioButtonFreqClicked"/>
 
             <RadioButton android:id="@+id/button_6H"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Every 6 Hours"
+                android:text="Sau 10 Phút"
                 android:onClick="onRadioButtonFreqClicked"/>
             <RadioButton android:id="@+id/button_8H"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Every 8 Hours"
+                android:text="Sau 15 Phút"
                 android:onClick="onRadioButtonFreqClicked"/>
             <RadioButton android:id="@+id/button_12H"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Every 12 Hours"
+                android:text="Sau 20 Phút"
                 android:onClick="onRadioButtonFreqClicked"/>
             <RadioButton android:id="@+id/button_24H"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Every 24 Hours"
+                android:text="Sau 30 Phút"
                 android:onClick="onRadioButtonFreqClicked"/>
 
         </RadioGroup>
@@ -202,7 +202,7 @@
             android:textSize="20sp"
             android:typeface="serif"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Next Doctor Appointment"
+            android:text="Thiết Lập Giờ Nhắc Uống Thuốc Của Bạn"
             android:id="@+id/Doc_app"
 
             android:clickable="true"
@@ -225,7 +225,7 @@
                 android:layout_width="85dp"
                 android:layout_height="85dp"
                 android:background="@drawable/oval"
-                android:text="Save"
+                android:text="Hoàn Thành"
                 android:elevation="10dp"
                 android:id="@+id/savebutton"
                 android:textColor="#FFFFFF" />
@@ -236,7 +236,7 @@
                 android:layout_height="85dp"
                 android:background="@drawable/oval"
                 android:id="@+id/clearbutton"
-                android:text="Clear"
+                android:text="Thoát"
                 android:elevation="10dp"
                 android:textColor="#FFFFFF"
                 android:layout_gravity="right|top" />

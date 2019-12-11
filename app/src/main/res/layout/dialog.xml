@@ -6,7 +6,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Snooze"
+        android:text="Ngủ"
         android:id="@+id/snooze"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -18,7 +18,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dismiss"
+        android:text="Bỏ Qua"
         android:id="@+id/dismiss"
         android:layout_gravity="right"
         android:layout_alignTop="@+id/snooze"

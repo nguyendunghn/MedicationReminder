@@ -4,10 +4,10 @@
         android:layout_height="match_parent">
 
     <CheckBoxPreference
-            android:title="@string/pref_enable_Vibration_label"
-            android:key="@string/pref_enable_Vibration_key"
-            android:summaryOff="@string/pref_enable_Vibration_false"
-            android:summaryOn="@string/pref_enable_Vibration_true"
+            android:title="Bật Rung"
+            android:key="Bật Rung"
+            android:summaryOff="Không Bật"
+            android:summaryOn="Đã Bật"
          android:defaultValue="@string/pref_enable_Vibration_default" />
 
 </PreferenceScreen>

@@ -17,7 +17,6 @@
         app:compactCalendarCurrentSelectedDayBackgroundColor="#07865C"
         app:compactCalendarCurrentDayBackgroundColor="#016645"
         app:compactCalendarMultiEventIndicatorColor="#fff"
-        android:layout_above="@+id/alarmToggle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 </LinearLayout>

@@ -8,5 +8,5 @@
         android:id="@+id/action_settings"
         app:showAsAction="never"
         android:orderInCategory="100"
-        android:title="Settings" />
+        android:title="Cài Đặt" />
 </menu>
